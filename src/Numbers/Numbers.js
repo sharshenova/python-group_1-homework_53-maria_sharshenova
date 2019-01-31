@@ -1,14 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Numbers = props => {
-    return (
-        <div className="numbers">
-        	<div><button>New numbers</button></div>
-            <h1>{props.items}</h1>
-        </div>
-    );
+class Numbers extends Component {
+    render() {
+        return (
+            <div className="numbers">
+                <p>{this.props.items}</p>
+            </div>
+        );
+    };
 };
 
-export default Numbers;
 
-//onClick={this.newNumbers}
+export default Numbers;
